@@ -1,6 +1,7 @@
 package main
 
 import (
+    "log"
     "os"
 
     "github.com/hyperledger/fabric-chaincode-go/shim"
@@ -10,10 +11,12 @@ import (
 type KVStore struct {}
 
 func (kv *KVStore) Init(stub shim.ChaincodeStubInterface) peer.Response {
+    log.Printf("Received Init")
     return shim.Success(nil)
 }
 
 func (kv *KVStore) Invoke(stub shim.ChaincodeStubInterface) peer.Response {
+    log.Printf("Received Invoke")
     return shim.Success(nil)
 }
 

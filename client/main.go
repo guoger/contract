@@ -36,6 +36,11 @@ func main() {
         log.Fatalf("Failed to receive chaincode message: %v", err)
     }
 
+    err = client.Send(&peer.ChaincodeMessage{Type:peer.ChaincodeMessage_INIT})
+    if err != nil {
+        log.Fatalf("Failed to send chaincode message: %v", err)
+    }
+
     log.Printf("%v\n", msg)
     os.Exit(0)
 }
