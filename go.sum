@@ -14,6 +14,7 @@ github.com/guoger/fabric-chaincode-go v0.0.0-20191108205148-17c4b2760b56 h1:UNAl
 github.com/guoger/fabric-chaincode-go v0.0.0-20191108205148-17c4b2760b56/go.mod h1:HZK6PKLWrvdD/t0oSLiyaRaUM6fZ7qjJuOlb0zrn0mo=
 github.com/guoger/fabric-chaincode-go v0.0.0-20191111074005-ac7779594072 h1:r1zoJPivW1G8y01uTw1i5bSC3s5j08Izq5+OkRiaLVc=
 github.com/guoger/fabric-chaincode-go v0.0.0-20191111074005-ac7779594072/go.mod h1:V9c3ZLEkG69dQMKXZ9trZMFMn0PYcq8ur6/eyWHtlgs=
+github.com/guoger/fabric-chaincode-go v0.0.0-20191111080942-410dd66acf8a/go.mod h1:V9c3ZLEkG69dQMKXZ9trZMFMn0PYcq8ur6/eyWHtlgs=
 github.com/hyperledger/fabric-protos-go v0.0.0-20190821214336-621b908d5022 h1:WzttYAPO5xkQ87ZrxzEhvDZknfarSNu1PZt3NPMTE3Y=
 github.com/hyperledger/fabric-protos-go v0.0.0-20190821214336-621b908d5022/go.mod h1:xVYTjK4DtZRBxZ2D9aE4y6AbLaPwue2o/criQyQbVD0=
 github.com/hyperledger/fabric-protos-go v0.0.0-20191108205341-c09017a7950b h1:Te5j/HQk2oTDm9+anOdmNKCs0CH1DUVQw4HeRhCUu4M=
