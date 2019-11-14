@@ -7,3 +7,6 @@ spec:
     spec:
       containers:
         - image: __IMAGE__
+          ports:
+            - name: h2c
+              containerPort: 8080
