@@ -10,3 +10,6 @@ spec:
           ports:
             - name: h2c
               containerPort: 8080
+          env:
+            - name: TARGET
+              value: "Go Sample v1"
