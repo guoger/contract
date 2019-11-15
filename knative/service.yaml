@@ -1,0 +1,12 @@
+apiVersion: serving.knative.dev/v1alpha1
+kind: Service
+metadata:
+  name: contract
+spec:
+  template:
+    spec:
+      containers:
+        - image: __IMAGE__
+          ports:
+            - name: h2c
+              containerPort: 8080
