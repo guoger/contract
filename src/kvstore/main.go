@@ -1,12 +1,12 @@
 package main
 
 import (
-    "log"
-    "os"
+	"log"
+	"os"
 	"strconv"
 
 	"github.com/hyperledger/fabric-chaincode-go/shim"
-    pb "github.com/hyperledger/fabric-protos-go/peer"
+	pb "github.com/hyperledger/fabric-protos-go/peer"
 )
 
 // SimpleChaincode example simple Chaincode implementation
@@ -67,6 +67,8 @@ func (t *SimpleChaincode) Invoke(stub shim.ChaincodeStubInterface) pb.Response {
 	case "respond":
 		// return with an error
 		return t.respond(stub, args)
+	case "update":
+		return shim.Error("update is not implemented yet")
 	default:
 		return shim.Error(`Invalid invoke function name. Expecting "invoke", "delete", "query", or "respond"`)
 	}
@@ -195,10 +197,10 @@ func (t *SimpleChaincode) respond(stub shim.ChaincodeStubInterface, args []strin
 }
 
 func main() {
-    err := shim.Start(&SimpleChaincode{})
-    if err != nil {
-        panic(err)
-    }
+	err := shim.Start(&SimpleChaincode{})
+	if err != nil {
+		panic(err)
+	}
 
-    os.Exit(0)
+	os.Exit(0)
 }
