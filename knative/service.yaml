@@ -13,3 +13,5 @@ spec:
           env:
             - name: TARGET
               value: "Go Sample v1"
+            - name: CORE_CHAINCODE_ID_NAME
+              value: "my_prebuilt_chaincode:01cf7db461576c5720b6b0796ead0cbb87c6d212d42ca95ecd1ba84e250d900a"
