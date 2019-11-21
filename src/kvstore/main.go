@@ -114,9 +114,9 @@ func (t *SimpleChaincode) invoke(stub shim.ChaincodeStubInterface, args []string
 		return shim.Error("Invalid transaction amount, expecting a integer value")
 	}
 
-	// if X <= 0 || Aval < X {
-	// 	return shim.Error("Evil transaction!")
-	// }
+	if X <= 0 || Aval < X {
+		return shim.Error("Evil transaction!")
+	}
 
 	Aval = Aval - X
 	Bval = Bval + X
