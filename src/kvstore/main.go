@@ -115,7 +115,7 @@ func (t *SimpleChaincode) invoke(stub shim.ChaincodeStubInterface, args []string
 	}
 
 	if X <= 0 || Aval < X {
-		return shim.Error("Evil transaction")
+		return shim.Error("Evil transaction!")
 	}
 
 	Aval = Aval - X
